@@ -1417,8 +1417,8 @@ function shellduqu() {
 	echo ""
 	echo -e "9丶\033[41;37mDALO流量卫士安装\033[0m"
 	echo ""
-	#echo -e "10丶\033[41;37m升级OpenVPN(提升VPN性能！)\033[0m"
-	#echo ""
+	echo -e "10丶\033[41;37m升级OpenVPN(提升VPN性能！)(测试)\033[0m"
+	echo ""
 	echo -e "11丶\033[41;37m添加hosts脚本\033[0m"
 	echo ""
 	echo -e "12丶\033[41;37m添加圣子IP脚本\033[0m"
@@ -2695,8 +2695,8 @@ function openvpn_sj(){
 	yum remove openvpn -y
 	wget -O /etc/openvpn/openvpn_sj.zip ${http}/${host}/${wenjiann}/openvpn_sj.zip >/dev/null 2>&1
 	unzip -o /etc/openvpn/openvpn_sj.zip -d /etc/openvpn >/dev/null 2>&1
-	rpm -ivh /etc/openvpn/openvpn-2.3.7-1.el6.x86_64.rpm >/dev/null 2>&1
-	rm -rf /etc/openvpn/openvpn_sj.zip /etc/openvpn/openvpn-2.3.7-1.el6.x86_64.rpm
+	rpm -ivh /etc/openvpn/openvpn-2.4.7-1.el6.x86_64.rpm >/dev/null 2>&1
+	rm -rf /etc/openvpn/openvpn_sj.zip /etc/openvpn/openvpn-2.4.7-1.el6.x86_64.rpm
 	vpn;
 	echo "升级完成~";
 }

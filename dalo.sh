@@ -2722,8 +2722,8 @@ if [ ! -f /bin/cp ]; then
 fi
 echo ""
 IP=`curl -s http://members.3322.org/dyndns/getip`;
-http=http:/
-host=radius-1253794729.cosgz.myqcloud.com
+http=https:/
+host=github.com/mayday12138/dalo_openvpn/raw
 shouquan=shouquan
 wenjiann=data
 shellshibie

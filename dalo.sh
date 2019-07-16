@@ -1,7 +1,4 @@
 #/bin/bash
-#本脚本为开源，免费提供大家使用！
-#请勿使用非法用途
-#作者Q：2223139086
 
 function set_radius2() {
 	yum install -y mysql mysql-server freeradius-mysql php-mysql
@@ -1001,11 +998,11 @@ ntpServer=(
 [3]=dns.sjtu.edu.cn
 [4]=dns2.synet.edu.cn
 [5]=ntp.glnet.edu.cn
-[6]=ntp-sz.chl.la
-[7]=202.118.1.130
-[8]=ntp.gwadar.cn
-[9]=dns1.synet.edu.cn
-[10]=sim.ntp.org.cn
+[6]=ntp3.aliyun.com
+[7]=ntp4.aliyun.com
+[8]=ntp5.aliyun.com
+[9]=ntp6.aliyun.com
+[10]=ntp7.aliyun.com
 )
 serverNum=`echo ${#ntpServer[*]}`
 NUM=0
@@ -2723,7 +2720,7 @@ fi
 echo ""
 IP=`curl -s http://members.3322.org/dyndns/getip`;
 http=https:/
-host=github.com/mayday12138/dalo_openvpn/raw
+host=github.com/mayday12138/dalo_openvpn/raw/master/
 shouquan=shouquan
 wenjiann=data
 shellshibie
